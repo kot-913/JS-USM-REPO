@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#transaction-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#transaction-form input,
+#transaction-form select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+#transaction-form input:invalid:not(:placeholder-shown) {
+  border-color: #e74c3c;
+}
+
+#amount {
+  width: 120px;
+}
+
+#category {
+  width: 150px;
+}
+
+#description {
+  flex: 1;
+  min-width: 150px;
+}
+
+#transaction-form button {
+  padding: 8px 20px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#transaction-form button:hover {
+  background: #2980b9;
+}
+
+#total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: white;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+thead {
+  background: #34495e;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  text-align: left;
+}
+
+tbody tr {
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  opacity: 0.85;
+}
+
+tr.income {
+  background: #d5f5e3;
+}
+
+tr.expense {
+  background: #fadbd8;
+}
+
+.delete-btn {
+  padding: 4px 10px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+#transaction-details {
+  margin-top: 20px;
+  padding: 15px;
+  background: white;
+  border-radius: 4px;
+  border-left: 4px solid #3498db;
+}
