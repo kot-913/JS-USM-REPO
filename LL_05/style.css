@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #eef2f7;
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1f2d3d;
+}
+
+#transaction-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 14px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+#transaction-form input,
+#transaction-form select {
+  padding: 8px 12px;
+  border: 1px solid #ccd1d9;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+#transaction-form input:focus,
+#transaction-form select:focus {
+  border-color: #3498db;
+}
+
+#amount {
+  width: 130px;
+}
+
+#category {
+  width: 160px;
+}
+
+#description {
+  flex: 1;
+  min-width: 160px;
+}
+
+#transaction-form button {
+  padding: 8px 22px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#transaction-form button:hover {
+  background: #2980b9;
+}
+
+#total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+thead {
+  background: #34495e;
+  color: white;
+}
+
+th,
+td {
+  padding: 11px 14px;
+  text-align: left;
+  font-size: 14px;
+}
+
+tbody tr {
+  cursor: pointer;
+  border-bottom: 1px solid #ecf0f1;
+  transition: opacity 0.15s ease;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  opacity: 0.85;
+}
+
+tr.income {
+  background: #d5f5e3;
+}
+
+tr.expense {
+  background: #fadbd8;
+}
+
+.delete-btn {
+  padding: 5px 12px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+}
+
+#transaction-details {
+  margin-top: 24px;
+  padding: 16px 18px;
+  background: white;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+#transaction-details .hint {
+  color: #7f8c8d;
+  font-style: italic;
+}
